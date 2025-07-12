@@ -68,13 +68,12 @@ class Hero:
         self.gold -= gold_minus
     
     def info(self):
-        print("\n=== ИНФОРМАЦИЯ О ПЕРСОНАЖЕ ===")
+        print(f"\n=== Уровень {self.level} ===")
         print(f"Здоровье: {self.health}/{self.max_health}")
         print(f"Золото: {self.gold} монет")
-        print(f"Уровень: {self.level}")
         
         if self.artefacts:
-            print("\nАртефакты:")
+            print("Артефакты:")
             max_len = max(len(art) for art in self.artefacts) + 2
             for i, artefact in enumerate(self.artefacts, 1):
                 desc = {
@@ -87,7 +86,7 @@ class Hero:
                 
                 print(f"  {i}. {artefact.ljust(max_len)} → {desc}")
         else:
-            print("\nУ вас пока нет артефактов")
+            print("У вас пока нет артефактов")
 
 
     def spider_damage(self):
@@ -271,7 +270,6 @@ def run():
     print("Приветствую, герой! Вы проснулись в тёмной комнате, освещаемой единственным факелом. Не понимая, что происходит, вы встаёте, берёте факел и осматриваетесь.")
     print("Вокруг каменные стены, а впереди дверь с табличкой «Добро пожаловать в подземелье!» над ней. Других дверей в комнате нет, так что вам приходится погрузиться в недры подземелья, чтобы выбраться наружу и узнать, как вы здесь оказались.")
     while hero.alive and hero.level < 100:
-        print("Уровень ", hero.level)
         hero.info()
         input("Для продолжения нажмите Enter...")
 
@@ -702,7 +700,6 @@ def run():
             hero.level += 1
 
     if hero.level >= 100:
-        print("Уровень ", hero.level)
         hero.info()
         input("Для продолжения нажмите Enter...")
         dragon = 100
