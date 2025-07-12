@@ -12,7 +12,13 @@
 ## Запуск игры
 ### Исполнемый файл (exe)
 
-[Скачать]()
+[Скачать Dungeon of Random v1.0](https://github.com/Zodix07/dungeon_of_random/releases/download/v1.0/dungeon_of_random.exe)
 
 ### Скачать репозиторий
 `git clone https://github.com/Zodix07/dungeon_of_random.git`
+
+## Скриншоты
+
+![Скриншот_1]()
+
+## Планы по развитию
