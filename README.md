@@ -19,11 +19,11 @@
 
 ## Скриншоты
 
-![Скриншот_1](/images/image1.png)
+![Скриншот_1](/screenshots/image1.png)
 ***
-![Скриншот_2](/images/image2.png)
+![Скриншот_2](/screenshots/image2.png)
 ***
-![Скриншот_3](/images/image3.png)
+![Скриншот_3](/screenshots/image3.png)
 
 ## Планы по развитию
 * Сделать полноценную версию с графикой
